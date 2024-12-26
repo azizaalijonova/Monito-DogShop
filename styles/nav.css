@@ -1,0 +1,167 @@
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2.4rem 8rem;
+  gap: 3.6rem;
+  background: linear-gradient(90deg, #fceed5 100%, #ffe7ba 100%);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+.top-sticker {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 30rem;
+}
+.dropdown {
+  position: relative;
+  display: none;
+}
+#menu-toggle {
+  display: none;
+}
+
+.burger {
+  cursor: pointer;
+
+  img {
+    width: 3.2rem;
+    height: 3.2rem;
+  }
+}
+
+.drop-menu {
+  list-style: none;
+  width: 10rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-family: gil-700;
+  background-color: var(--blue-bold);
+
+  transform: scaleX(0);
+  transform-origin: top;
+  transition: all 0.3s ease;
+
+  position: absolute;
+  top: 2rem;
+  left: 0;
+
+  a {
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+    color: #f7dba7;
+    line-height: 2.4rem;
+    font-size: 1.6rem;
+  }
+}
+
+#menu-toggle:checked ~ .drop-menu {
+  transform: scaleX(1);
+}
+
+.nav-left {
+  display: flex;
+  gap: 4.8rem;
+  align-items: center;
+
+  ul {
+    display: flex;
+    gap: 4.8rem;
+
+    a {
+      display: inline-block;
+      font-family: gil-700;
+      font-size: 1.6rem;
+      line-height: 2.6rem;
+      color: var(--primary);
+    }
+  }
+}
+
+.nav-right {
+  display: flex;
+  gap: 1.4rem;
+}
+
+.searchbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2rem;
+  padding: 1.2rem 2rem 1.2rem 1.6rem;
+  background-color: #fdfdfd;
+  border-radius: 4.6rem;
+
+  img {
+    width: 2rem;
+    height: 2rem;
+  }
+}
+
+input {
+  border: none;
+  outline: none;
+  text-align: center;
+  background-color: transparent;
+  font-family: gil-500;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  color: #99a2a5;
+  width: 100%;
+}
+
+.lang {
+  display: flex;
+  gap: 4px;
+  padding: 10px 8px 8px 8px;
+  align-items: center;
+  justify-content: center;
+
+  select {
+    border: none;
+    outline: none;
+    background-color: transparent;
+  }
+}
+
+.eng {
+  font-family: gil-500;
+  font-size: 1.6rem;
+  line-height: 2.3rem;
+}
+
+.search {
+  display: none;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 834px) {
+  .dropdown {
+    display: block;
+  }
+
+  .nav-left > ul {
+    display: none;
+  }
+
+  .nav-right {
+    display: none;
+  }
+
+  .search {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  nav {
+    padding: 2px 8px;
+  }
+}

@@ -1,0 +1,38 @@
+.partners > .container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 4rem 0;
+}
+
+.partners-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.partners-title_content {
+  display: flex;
+  gap: 8px;
+  align-items: flex-end;
+}
+
+.partners-items {
+  display: flex;
+  gap: 2rem;
+}
+
+.partner-item {
+  width: 15rem;
+  height: 15rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 834px) {
+  .partners {
+    display: none;
+  }
+}

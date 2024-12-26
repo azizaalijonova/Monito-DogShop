@@ -1,0 +1,160 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Colors */
+:root {
+  --primary: #003459;
+  --blue-light: #0078cd;
+  --blue-medium: #00528c;
+  --blue-bold: #002a48;
+
+  --secondary: #f7dba7;
+  --yellow-light: #fceed5;
+  --yellow-medium: #f1d092;
+  --yellow-bold: #eec77e;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+.container {
+  max-width: 82%;
+  margin: 0 auto;
+}
+.btn {
+  background-color: var(--primary);
+  color: #fdfdfd;
+  border-radius: 5.7rem;
+  border: none;
+  padding: 1.4rem 2.8rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  font-family: gil-700;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: var(--blue-medium);
+}
+.btn2 {
+  background-color: transparent;
+  border: 1.5px solid #003459;
+  color: #003459;
+  border-radius: 5.7rem;
+  padding: 1.4rem 2.8rem;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  font-family: gil-500;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  a {
+    width: 2.4rem;
+    height: 2.4rem;
+
+    i {
+      width: 100%;
+      color: #003459;
+    }
+  }
+}
+
+.btn2:hover {
+  border: 3px solid #003459;
+}
+
+h1 {
+  font-family: gil-700;
+  font-weight: 800;
+  font-size: 6rem;
+  line-height: 6.8rem;
+  color: var(--blue-bold);
+  margin-bottom: 4px;
+}
+
+h2 {
+  font-family: gil-700;
+  font-size: 4.6rem;
+  line-height: 6rem;
+  color: var(--blue-bold);
+  margin-bottom: 2.4rem;
+}
+
+h3 {
+  font-family: gil-700;
+  font-size: 2.4rem;
+  line-height: 3.6rem;
+  color: #003459;
+}
+
+h4 {
+  font-family: gil-500;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  color: #000000;
+}
+
+h5 {
+  color: #00171f;
+  font-family: gil-700;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+}
+
+p {
+  font-family: gil-500;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  color: #242b33;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 834px) {
+  .container {
+    max-width: 70%;
+  }
+  h1 {
+    font-size: 4.6rem;
+    line-height: 6rem;
+  }
+
+  h2 {
+    font-size: 2.8rem;
+    line-height: 3.8rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .container {
+    max-width: 94%;
+  }
+}
